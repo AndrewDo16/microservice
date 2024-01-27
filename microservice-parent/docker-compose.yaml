@@ -5,9 +5,23 @@ services:
     image: mongo
     container_name: mongo_db
     volumes:
-      - ./:/project
+      - ./:/projectMongo
     ports:
       - "27017:27017"
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql_db
+    environment:
+      - MYSQL_DATABASE=order-service
+      - MYSQL_ROOT_PASSWORD=mysql
+      - MYSQL_USER=root
+    volumes:
+      - ./:/projectMysql
+    ports:
+      - "3306:3306"
+
+
 
 #  web-server:
 #    container_name: web-server

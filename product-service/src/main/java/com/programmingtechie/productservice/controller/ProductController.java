@@ -1,12 +1,11 @@
-package ru.programming.productservice.controller;
+package com.programmingtechie.productservice.controller;
 
-
+import com.programmingtechie.productservice.dto.ProductRequest;
+import com.programmingtechie.productservice.dto.ProductResponse;
+import com.programmingtechie.productservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.programming.productservice.dto.ProductRequest;
-import ru.programming.productservice.dto.ProductResponse;
-import ru.programming.productservice.service.ProductService;
 
 import java.util.List;
 

@@ -1,12 +1,12 @@
-package ru.programming.productservice.service;
+package com.programmingtechie.productservice.service;
 
+import com.programmingtechie.productservice.dto.ProductRequest;
+import com.programmingtechie.productservice.dto.ProductResponse;
+import com.programmingtechie.productservice.model.Product;
+import com.programmingtechie.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.programming.productservice.dto.ProductRequest;
-import ru.programming.productservice.dto.ProductResponse;
-import ru.programming.productservice.model.Product;
-import ru.programming.productservice.repository.ProductRepository;
 
 import java.util.List;
 

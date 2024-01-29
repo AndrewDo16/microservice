@@ -6,10 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by AndreyDo16 on 27.01.2024
- */
-
 @RestController
 @RequestMapping("/api/order")
 @RequiredArgsConstructor
@@ -17,7 +13,7 @@ public class OrderController {
 
     private final OrderService orderService;
 
-    @PostMapping()
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public String placeOrder(@RequestBody OrderRequest orderRequest) {
         orderService.placeOrder(orderRequest);

@@ -1,8 +1,13 @@
 package com.programming.techie.discoveryserver;
 
-/**
- * Created by AndreyDo16 on 28.01.2024
- */
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
+@SpringBootApplication
+@EnableEurekaServer
 public class DiscoveryServerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DiscoveryServerApplication.class, args);
+    }
 }

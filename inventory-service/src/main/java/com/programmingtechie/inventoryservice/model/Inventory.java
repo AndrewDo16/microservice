@@ -1,19 +1,18 @@
 package com.programmingtechie.inventoryservice.model;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-/**
- * Created by AndreyDo16 on 27.01.2024
- */
+import javax.persistence.*;
 
 @Entity
 @Table(name = "t_inventory")
-@Data
-@NoArgsConstructor
+@Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Inventory {
 
     @Id
